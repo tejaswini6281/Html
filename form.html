@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form with Checkboxes and Radio Buttons</title>
+</head>
+<body>
+
+    <h1>Survey Form</h1>
+
+    <form action="/submit" method="POST">
+        <!-- Name Field -->
+       Enter your name
+        <input type="text" id="name" name="name" required>
+        <br><br>
+
+        <!-- Email Field -->
+        Enter your email
+        <input type="email" id="email" name="email" required>
+        <br><br>
+
+        <!-- Gender Radio Buttons -->
+       Gender
+        <input type="radio" id="male" name="gender" value="male">
+        male
+        <input type="radio" id="female" name="gender" value="female">
+        female
+        <input type="radio" id="other" name="gender" value="other">
+        other
+        <br><br>
+
+        <!-- Hobbies Checkboxes -->
+        Hobbies
+        <input type="checkbox" id="sports" name="hobbies" value="sports">
+ Sports
+        <input type="checkbox" id="reading" name="hobbies" value="reading">
+       Reading
+        <input type="checkbox" id="traveling" name="hobbies" value="traveling">
+        Traveling
+        <input type="checkbox" id="music" name="hobbies" value="music">
+        Music
+        <br><br>
+
+        <!-- Message Field -->
+       Message
+        <textarea id="message" name="message" rows="4" cols="50"></textarea>
+        <br><br>
+
+        <!-- Submit Button -->
+        <button type="submit">Submit</button>
+    </form>
+
+</body>
+</html>
