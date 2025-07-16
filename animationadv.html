@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            padding: 40px;
+            background-color: bisque;
+        }
+        h1{
+            margin-bottom: 30px;
+            color: black;
+        }
+        .box{
+            width: 100px;
+            height: 100px;
+            margin: 30px;
+            border: solid black;
+            display: inline-block;
+            background-color: crimson;
+        }
+        /* 1.fade-in */
+        .fade-in{
+            animation: fadeIn 2s linear infinite;
+        }
+        @keyframes fadeIn{
+            0%{opacity: 0;}
+            100%{opacity: 1;}
+        }
+        /* 2.slide in */
+        .slide-in{
+            animation: slideIn 2s ease forwards;
+        }
+        @keyframes slideIn{
+            0%{transform: translateX(-200px); opacity: 0;}
+            100%{transform: translateX(100px); opacity: 1;}
+        }
+        /* 3.bounce */
+        .bounce{
+            animation: bounce 1.2s linear infinite;
+        }
+        @keyframes bounce{
+            0% ,100%{transform: translateY(0);}
+           50%{transform: translateY(-30px);}
+        }
+        .rotate{
+            animation: rotate 0.5ms linear infinite;
+        }
+        @keyframes rotate{
+            0%{transform: rotate(0deg);}
+            100%{transform: rotate(360deg);}
+        }
+        .scale-up{
+            animation: scaleUp 2s linear infinite;
+        }
+        @keyframes scaleUp{
+            0%{transform: scale(0); opacity: 0;
+            }
+            100%{transform: scale(1); opacity: 1;}
+        }
+        /* Add Spacing labels */
+        .label{
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        .block{
+            display: inline-bloc;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Animations</h1>
+    <div class="block">
+        <div class="box fade-in"></div>
+        <div class="label" >Fade In</div>
+    </div>
+    <div class="block">
+        <div class="box slide-in"></div>
+        <div class="label">Slide In</div>
+    </div>
+    <div class="block">
+        <div class="box bounce"></div>
+        <div class="label">Bounce</div>
+    </div>
+    <div class="block">
+        <div  class="box rotate"></div>
+        <div class="label">Rotate</div>
+    </div>
+    <div class="block">
+        <div class="box scale-up"></div>
+        <div class="label">Scale Up</div>
+    </div>
+    
+</body>
+</html>
